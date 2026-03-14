@@ -2,11 +2,7 @@
   "code": "flower-digitalis-purpurea",
   "class": "BlockPlant",
   "textures": {
-    "digitalis-purpurea": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
-    "plant2a": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
-    "plant2b": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
-    "plant2astem": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
-    "plant2bstem": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" }
+    "digitalis-purpurea": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" }
   },
   "behaviors": [
     { "name": "DropNotSnowCovered" }

@@ -2,20 +2,11 @@
   "code": "flower-trillium-ovatum",
   "class": "BlockPlant",
   "textures": {
-    "trillium-ovatum": {
-      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    "trillium-ovatum-blooms": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum-blooms.png"
     },
-    "plant2a": {
-      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
-    },
-    "plant2b": {
-      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
-    },
-    "plant2astem": {
-      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
-    },
-    "plant2bstem": {
-      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    "trillium-ovatum-stems": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum-stems.png"
     }
   },
   "behaviors": [

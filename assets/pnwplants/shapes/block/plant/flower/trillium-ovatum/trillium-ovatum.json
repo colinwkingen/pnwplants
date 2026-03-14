@@ -8,8 +8,8 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"trillium-ovatum-blooms": "C:/Users/colin/Documents/gitrepos/pnwplants/assets/pnwplants/textures/blocks/plant/flower/trillium-ovatum/trillium-ovatum-blooms",
-		"trillium-ovatum-stems": "C:/Users/colin/Documents/gitrepos/pnwplants/assets/pnwplants/textures/blocks/plant/flower/trillium-ovatum/trillium-ovatum-stems"
+		"trillium-ovatum-blooms": "trillium-ovatum-blooms",
+		"trillium-ovatum-stems": "trillium-ovatum-stems"
 	},
 	"elements": [
 		{
