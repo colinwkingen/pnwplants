@@ -1,0 +1,1 @@
+Content mod for Vintage Story adding a variety of Pacific Northwest plants. Targeting addition of Foxglove and Trillium  flowers to start. 

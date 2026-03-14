@@ -1,0 +1,94 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": true
+	},
+	"textureWidth": 16,
+	"textureHeight": 24,
+	"textureSizes": {
+		"digitalis-purpurea": [64,32]
+	},
+	"textures": {
+		"digitalis-purpurea": "digitalis-purpurea"
+	},
+	"elements": [
+		{
+			"name": "Plant 2a",
+			"from": [ 4.0, 0.0, 4.0 ],
+			"to": [ 14.0, 24.0, 4.0 ],
+			"shade": false,
+			"renderPass": 2,
+			"uv": [ 2.0, 0.0 ],
+			"rotationOrigin": [ 12.0, 0.0, 7.0 ],
+			"rotationY": 45.0,
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 10.0, 24.0 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 24.0 ], "enabled": false },
+				"south": { "texture": "#plant2a", "uv": [ 2.0, 0.0, 12.0, 24.0 ], "windMode": [0,0,2,2], "windData": [0,0,1,1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 24.0 ], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 10.0, 0.5 ], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 10.0, 0.5 ], "enabled": false }
+			},
+			"children": [
+				{
+					"name": "Plant 2b",
+					"from": [ 5.0, 0.0, -5.0 ],
+					"to": [ 5.0, 32.8, 6.0 ],
+					"shade": false,
+					"renderPass": 2,
+					"unwrapMode": 1,
+					"uv": [ 42.625, -0.88 ],
+					"rotationOrigin": [ 5.0, 0.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#null", "uv": [ 54.0, -0.5, 54.5, 32.0 ], "enabled": false },
+						"east": { "texture": "#digitalis-purpurea", "uv": [ 42.5, -0.5, 53.5, 32.0 ], "windMode": [0,2,2,0], "windData": [0,1,1,0] },
+						"south": { "texture": "#null", "uv": [ 54.0, -0.5, 54.5, 32.0 ], "enabled": false },
+						"west": { "texture": "#null", "uv": [ 54.0, -0.5, 65.0, 32.0 ], "enabled": false },
+						"up": { "texture": "#null", "uv": [ 54.0, -1.0, 54.5, 10.0 ], "rotation": 180, "enabled": false },
+						"down": { "texture": "#null", "uv": [ 54.0, 32.0, 54.5, 43.0 ], "enabled": false }
+					}
+				}
+			]
+		},
+		{
+			"name": "Plant 2a stem",
+			"from": [ 4.0, 0.0, 4.0 ],
+			"to": [ 14.0, 24.0, 4.0 ],
+			"shade": false,
+			"climateColorMap": "climatePlantTint",
+			"seasonColorMap": "seasonalFoliage",
+			"renderPass": 2,
+			"uv": [ 2.0, 0.0 ],
+			"rotationOrigin": [ 12.0, 0.0, 7.0 ],
+			"rotationY": 45.0,
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 10.0, 24.0 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.0, 24.0 ], "enabled": false },
+				"south": { "texture": "#plant2astem", "uv": [ 2.0, 0.0, 12.0, 24.0 ], "windMode": [0,0,2,2], "windData": [0,0,1,1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.0, 24.0 ], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 10.0, 0.0 ], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 10.0, 0.0 ], "enabled": false }
+			},
+			"children": [
+				{
+					"name": "Plant 2b stem",
+					"from": [ 5.0, 0.0, -5.0 ],
+					"to": [ 5.0, 24.0, 5.0 ],
+					"shade": false,
+					"climateColorMap": "climatePlantTint",
+					"seasonColorMap": "seasonalFoliage",
+					"renderPass": 2,
+					"uv": [ 0.5, 0.0 ],
+					"rotationOrigin": [ 5.0, 0.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#null", "uv": [ 10.5, 0.0, 11.0, 24.0 ], "enabled": false },
+						"east": { "texture": "#plant2bstem", "uv": [ 0.5, 0.0, 10.5, 24.0 ], "windMode": [0,2,2,0], "windData": [0,1,1,0] },
+						"south": { "texture": "#null", "uv": [ 10.5, 0.0, 11.0, 24.0 ], "windMode": [-1,-1,-1,-1], "windData": [0,0,1,1], "enabled": false },
+						"west": { "texture": "#null", "uv": [ 10.5, 0.0, 20.5, 24.0 ], "enabled": false },
+						"up": { "texture": "#null", "uv": [ 10.5, 0.0, 11.0, 10.0 ], "rotation": 180, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1], "enabled": false },
+						"down": { "texture": "#null", "uv": [ 10.5, 24.0, 11.0, 34.0 ], "enabled": false }
+					}
+				}
+			]
+		}
+	]}

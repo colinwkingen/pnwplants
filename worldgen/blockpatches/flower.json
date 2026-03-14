@@ -1,0 +1,10 @@
+[{
+		
+		"blockCodes": ["pnwplants:flower-digitalis-purpurea"],
+		"minTemp": 30,
+		"minRain": 0.75,
+		"minForest": 0.9,
+		"quantity": { "avg": 1, "var": 0 },
+		"chance": 1.25
+	}
+]

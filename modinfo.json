@@ -1,0 +1,10 @@
+{
+  "type": "content",
+  "modid": "pnwplants",
+  "name": "PNW Plants - Flora of the Pacific Northwest",
+  "authors": [
+    "TOMMY_TOMBSTONE"
+  ],
+  "description": "This is a Vintage Story content mod that adds a variety of plants from the Pacific Northwest of North America (Washinton, Oregon, BC) to the base game.",
+  "version": "0.1.0"
+}
