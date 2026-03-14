@@ -1,0 +1,70 @@
+{
+  "code": "flower-trillium-ovatum",
+  "class": "BlockPlant",
+  "textures": {
+    "trillium-ovatum": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    },
+    "plant2a": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    },
+    "plant2b": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    },
+    "plant2astem": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    },
+    "plant2bstem": {
+      "base": "blocks/plant/flower/trillium-ovatum/trillium-ovatum.png"
+    }
+  },
+  "behaviors": [
+    {
+      "name": "DropNotSnowCovered"
+    }
+  ],
+  "attributes": {
+    "butterflyFeed": true,
+    "beeFeed": true
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "flora": [
+      "*"
+    ]
+  },
+  "renderpass": "BlendNoCull",
+  "drawtype": "json",
+  "shape": {
+    "base": "pnwplants:shapes/block/plant/flower/trillium-ovatum/trillium-ovatum.json"
+  },
+  "randomDrawOffset": false,
+  "randomizeRotations": true,
+  "randomizeAxes": "xz",
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": true
+  },
+  "blockmaterial": "Plant",
+  "replaceable": 3000,
+  "lightAbsorption": 0,
+  "resistance": 0.5,
+  "collisionbox": null,
+  "sounds": {
+    "place": "game:block/plant",
+    "break": "game:block/plant",
+    "hit": "game:block/plant",
+    "inside": "game:walk/inside/leafy/bushrustle*"
+  },
+  "rainPermeable": false,
+  "materialDensity": 200,
+  "combustibleProps": {
+    "burnTemperature": 600,
+    "burnDuration": 5
+  },
+  "frostable": true
+}
