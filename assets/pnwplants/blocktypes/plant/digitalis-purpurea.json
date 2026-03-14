@@ -2,6 +2,7 @@
   "code": "flower-digitalis-purpurea",
   "class": "BlockPlant",
   "textures": {
+    "digitalis-purpurea": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
     "plant2a": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
     "plant2b": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
     "plant2astem": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" },
@@ -15,9 +16,9 @@
     "beeFeed": true
   },
   "creativeinventory": { "general": ["*"], "flora": ["*"] },
-  "renderpass": "OpaqueNoCull",
+  "renderpass": "BlendNoCull",
   "drawtype": "json",
-  "shape": { "base": "pnwplants:shapes/block/plant/flower/digitalis-purpurea/one-stalk.json" },
+  "shape": { "base": "pnwplants:shapes/block/plant/flower/digitalis-purpurea/one-stalk-v2.json" },
   "randomDrawOffset": false,
   "randomizeRotations": true,
   "randomizeAxes": "xz",
