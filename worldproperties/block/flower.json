@@ -3,6 +3,12 @@
 	"variants": [
 		{
 			"code": "digitalis-purpurea"
+		},
+		{
+			"code": "dicentra-formosa"
+		},
+		{
+			"code": "trillium-ovatum"
 		}
 	]
 }

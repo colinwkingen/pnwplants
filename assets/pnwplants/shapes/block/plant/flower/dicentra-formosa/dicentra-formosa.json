@@ -1,0 +1,108 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"dicentra-formosa": "C:/Users/colin/Documents/gitrepos/pnwplants/assets/pnwplants/textures/blocks/plant/flower/dicentra-formosa/dicentra-formosa"
+	},
+	"elements": [
+		{
+			"name": "Foliage1",
+			"from": [ 0.0, 0.0, 5.0 ],
+			"to": [ 16.0, 8.0, 11.0 ],
+			"renderPass": 1,
+			"rotationOrigin": [ 0.0, 0.0, 5.0 ],
+			"faces": {
+				"north": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 8.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 8.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+			}
+		},
+		{
+			"name": "Foliage2",
+			"from": [ 0.0, 0.0, 5.0 ],
+			"to": [ 16.0, 8.0, 11.0 ],
+			"renderPass": 1,
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"rotationY": -90.0,
+			"faces": {
+				"north": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 8.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 8.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 6.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+			}
+		},
+		{
+			"name": "Foliage3",
+			"from": [ 0.0, 0.0, 7.0 ],
+			"to": [ 16.0, 4.0, 9.0 ],
+			"renderPass": 1,
+			"rotationOrigin": [ 8.0, 0.0, 10.0 ],
+			"faces": {
+				"north": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 12.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+			}
+		},
+		{
+			"name": "Foliage4",
+			"from": [ 0.0, 0.0, 7.0 ],
+			"to": [ 16.0, 4.0, 9.0 ],
+			"renderPass": 1,
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"rotationY": -90.0,
+			"faces": {
+				"north": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 12.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+			}
+		},
+		{
+			"name": "Foliage5",
+			"from": [ 0.0, 0.0, 7.0 ],
+			"to": [ 16.0, 4.0, 9.0 ],
+			"renderPass": 1,
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"rotationY": -45.0,
+			"faces": {
+				"north": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 12.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+			}
+		},
+		{
+			"name": "Foliage6",
+			"from": [ 0.0, 0.0, 7.0 ],
+			"to": [ 16.0, 4.0, 9.0 ],
+			"renderPass": 1,
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"rotationY": -135.0,
+			"faces": {
+				"north": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 16.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#dicentra-formosa", "uv": [ 0.0, 7.0, 16.0, 12.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 16.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false }
+			}
+		}
+	]}

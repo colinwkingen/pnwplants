@@ -71,34 +71,50 @@ def discover_shape_file(shape_dir: Path, shape_name: str | None) -> Path:
     return candidates[0]
 
 
-def discover_texture_file(texture_dir: Path, slug: str) -> Path:
-    preferred = texture_dir / f"{slug}.png"
-    if preferred.exists():
-        return preferred
-
+def discover_texture_files(texture_dir: Path) -> dict[str, str]:
+    """Discover all PNG files in texture directory and return as relative paths."""
     candidates = sorted(texture_dir.glob("*.png"))
     if not candidates:
         fail(f"No texture PNG files found in: {texture_dir}")
-    if len(candidates) > 1:
-        names = ", ".join(p.name for p in candidates)
-        fail(
-            "Could not determine a single texture file. "
-            f"Expected {slug}.png or exactly one PNG. Found: {names}"
-        )
-    return candidates[0]
+    
+    texture_map = {}
+    for path in candidates:
+        # Use filename without extension as the key
+        key = path.stem
+        texture_map[key] = path.name
+    
+    return texture_map
 
 
-def build_blocktype(slug: str, texture_rel: str, shape_rel: str) -> dict:
+def extract_texture_targets_from_shape(shape_path: Path, slug: str) -> dict[str, str]:
+    """Extract texture target names and their references from a shape JSON file."""
+    try:
+        shape_data = load_json(shape_path)
+    except Exception as exc:
+        fail(f"Could not parse shape file {shape_path}: {exc}")
+    
+    textures = shape_data.get("textures", {})
+    if not textures:
+        fail(f"No textures defined in shape file: {shape_path}")
+    
+    return dict(textures)
+
+
+def build_blocktype(
+    slug: str, shape_rel: str, texture_files: dict[str, str], slug_dir: str
+) -> dict:
+    """Build a blocktype JSON with proper texture targets matching the shape file."""
+    textures = {}
+    
+    # Create texture entries for each PNG file discovered
+    for texture_key, filename in texture_files.items():
+        texture_path = f"blocks/plant/flower/{slug_dir}/{filename}"
+        textures[texture_key] = {"base": texture_path}
+    
     return {
         "code": f"flower-{slug}",
         "class": "BlockPlant",
-        "textures": {
-            slug: {"base": texture_rel},
-            "plant2a": {"base": texture_rel},
-            "plant2b": {"base": texture_rel},
-            "plant2astem": {"base": texture_rel},
-            "plant2bstem": {"base": texture_rel},
-        },
+        "textures": textures,
         "behaviors": [{"name": "DropNotSnowCovered"}],
         "attributes": {"butterflyFeed": True, "beeFeed": True},
         "creativeinventory": {"general": ["*"], "flora": ["*"]},
@@ -170,6 +186,34 @@ def append_worldgen_entry(
     return True
 
 
+def append_worldproperties_variant(worldprops_path: Path, slug: str) -> bool:
+    """Add a flower variant to worldproperties/block/flower.json if not already present."""
+    if worldprops_path.exists():
+        worldprops = load_json(worldprops_path)
+        if not isinstance(worldprops, dict):
+            fail(f"Expected a JSON object in {worldprops_path}")
+    else:
+        # Create default structure if file doesn't exist
+        worldprops = {"code": "flower", "variants": []}
+
+    variants = worldprops.get("variants", [])
+    if not isinstance(variants, list):
+        fail(f"Expected 'variants' array in {worldprops_path}")
+
+    # Check if variant already exists
+    already_present = any(
+        isinstance(variant, dict) and variant.get("code") == slug for variant in variants
+    )
+
+    if already_present:
+        return False
+
+    variants.append({"code": slug})
+    worldprops["variants"] = variants
+    save_json(worldprops_path, worldprops)
+    return True
+
+
 def main() -> None:
     args = parse_args()
     repo_root = Path(__file__).resolve().parents[1]
@@ -178,6 +222,7 @@ def main() -> None:
     texture_dir = repo_root / "assets/pnwplants/textures/blocks/plant/flower" / args.slug
     blocktype_path = repo_root / "assets/pnwplants/blocktypes/plant" / f"{args.slug}.json"
     worldgen_path = repo_root / "worldgen/blockpatches/flower.json"
+    worldprops_path = repo_root / "worldproperties/block/flower.json"
 
     if not shape_dir.exists():
         fail(f"Shape directory does not exist: {shape_dir}")
@@ -185,7 +230,7 @@ def main() -> None:
         fail(f"Texture directory does not exist: {texture_dir}")
 
     shape_file = discover_shape_file(shape_dir, args.shape)
-    texture_file = discover_texture_file(texture_dir, args.slug)
+    texture_files = discover_texture_files(texture_dir)
 
     if blocktype_path.exists() and not args.overwrite:
         fail(
@@ -193,14 +238,13 @@ def main() -> None:
             "Use --overwrite to replace it."
         )
 
-    texture_rel = f"blocks/plant/flower/{args.slug}/{texture_file.name}"
     shape_rel = f"pnwplants:shapes/block/plant/flower/{args.slug}/{shape_file.name}"
-    block_data = build_blocktype(args.slug, texture_rel, shape_rel)
+    block_data = build_blocktype(args.slug, shape_rel, texture_files, args.slug)
 
     blocktype_path.parent.mkdir(parents=True, exist_ok=True)
     save_json(blocktype_path, block_data)
 
-    appended = append_worldgen_entry(
+    worldgen_appended = append_worldgen_entry(
         worldgen_path=worldgen_path,
         block_code=block_data["code"],
         min_temp=args.min_temp,
@@ -211,11 +255,19 @@ def main() -> None:
         quantity_var=args.quantity_var,
     )
 
+    worldprops_appended = append_worldproperties_variant(
+        worldprops_path=worldprops_path, slug=args.slug
+    )
+
     print(f"Created blocktype: {blocktype_path}")
-    if appended:
+    if worldgen_appended:
         print(f"Appended worldgen entry to: {worldgen_path}")
     else:
         print("Worldgen already had this block code. No entry appended.")
+    if worldprops_appended:
+        print(f"Appended variant to: {worldprops_path}")
+    else:
+        print("Worldproperties already had this variant. No entry appended.")
 
 
 if __name__ == "__main__":

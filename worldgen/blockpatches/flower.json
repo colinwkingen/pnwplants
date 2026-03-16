@@ -24,5 +24,18 @@
       "var": 0
     },
     "chance": 1.25
+  },
+  {
+    "blockCodes": [
+      "pnwplants:flower-dicentra-formosa"
+    ],
+    "minTemp": 30.0,
+    "minRain": 0.75,
+    "minForest": 0.9,
+    "quantity": {
+      "avg": 1,
+      "var": 0
+    },
+    "chance": 1.25
   }
 ]
