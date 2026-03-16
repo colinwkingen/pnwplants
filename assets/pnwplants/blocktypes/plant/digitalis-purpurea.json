@@ -2,8 +2,10 @@
   "code": "flower-digitalis-purpurea",
   "class": "BlockPlant",
   "textures": {
-    "digitalis-purpurea": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea.png" }
+    "digitalis-purpurea-blossom": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea-blossom.png" },
+    "digitalis-purpurea-leaves": { "base": "blocks/plant/flower/digitalis-purpurea/digitalis-purpurea-leaves.png" }
   },
+  
   "behaviors": [
     { "name": "DropNotSnowCovered" }
   ],
@@ -14,7 +16,7 @@
   "creativeinventory": { "general": ["*"], "flora": ["*"] },
   "renderpass": "BlendNoCull",
   "drawtype": "json",
-  "shape": { "base": "pnwplants:shapes/block/plant/flower/digitalis-purpurea/one-stalk-v2.json" },
+  "shape": { "base": "pnwplants:shapes/block/plant/flower/digitalis-purpurea/digitalis-purpurea-v2.json" },
   "randomDrawOffset": false,
   "randomizeRotations": true,
   "randomizeAxes": "xz",
