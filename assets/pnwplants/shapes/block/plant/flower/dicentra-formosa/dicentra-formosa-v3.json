@@ -1,0 +1,75 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"dicentra-formosa-v3": "C:/Users/colin/Documents/gitrepos/pnwplants/assets/pnwplants/textures/blocks/plant/flower/dicentra-formosa/dicentra-formosa-v3"
+	},
+	"elements": [
+		{
+			"name": "Cube2",
+			"from": [ 4.0, 3.0, 4.0 ],
+			"to": [ 16.0, 5.0, 16.0 ],
+			"rotationOrigin": [ 10.0, 3.0, 8.0 ],
+			"rotationX": 22.5,
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] },
+				"down": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		},
+		{
+			"name": "Cube3",
+			"from": [ 2.0, 2.0, 2.0 ],
+			"to": [ 14.0, 4.0, 14.0 ],
+			"rotationOrigin": [ 8.0, 2.0, 6.0 ],
+			"rotationX": -22.5,
+			"rotationY": -90.0,
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] },
+				"down": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		},
+		{
+			"name": "Cube4",
+			"from": [ 4.0, 2.3, 0.0 ],
+			"to": [ 16.0, 4.3, 12.0 ],
+			"rotationOrigin": [ 10.0, 2.0, 4.0 ],
+			"rotationZ": -22.5,
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] },
+				"down": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		},
+		{
+			"name": "Cube5",
+			"from": [ 0.0, 2.3, 4.0 ],
+			"to": [ 12.0, 4.3, 16.0 ],
+			"rotationOrigin": [ 6.0, 2.0, 8.0 ],
+			"rotationZ": 22.5,
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "enabled": false },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 12.0, 2.0 ], "windMode": [-1,-1,-1,-1], "enabled": false },
+				"up": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] },
+				"down": { "texture": "#dicentra-formosa-v3", "uv": [ 0.0, 0.0, 12.0, 12.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		}
+	]}

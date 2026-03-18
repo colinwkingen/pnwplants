@@ -125,7 +125,7 @@ def build_blocktype(
         "randomizeRotations": True,
         "randomizeAxes": "xz",
         "sideopaque": {"all": False},
-        "sidesolid": {"all": True},
+        "sidesolid": {"all": False},
         "blockmaterial": "Plant",
         "replaceable": 3000,
         "lightAbsorption": 0,

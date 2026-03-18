@@ -1,9 +1,9 @@
 {
-  "code": "flower-dicentra-formosa",
+  "code": "flower-dicentra-formosa-v3",
   "class": "BlockPlant",
   "textures": {
     "dicentra-formosa": {
-      "base": "blocks/plant/flower/dicentra-formosa/dicentra-formosa.png"
+      "base": "blocks/plant/flower/dicentra-formosa/dicentra-formosa-v3.png"
     }
   },
   "behaviors": [
@@ -26,7 +26,7 @@
   "renderpass": "OpaqueNoCull",
   "drawtype": "json",
   "shape": {
-    "base": "pnwplants:shapes/block/plant/flower/dicentra-formosa/dicentra-formosa.json"
+    "base": "pnwplants:shapes/block/plant/flower/dicentra-formosa/dicentra-formosa-v3.json"
   },
   "randomDrawOffset": false,
   "randomizeRotations": true,

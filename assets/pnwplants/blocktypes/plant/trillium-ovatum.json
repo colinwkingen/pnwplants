@@ -26,19 +26,19 @@
       "*"
     ]
   },
-  "renderpass": "BlendNoCull",
+  "renderpass": "OpaqueNoCull",
   "drawtype": "json",
   "shape": {
     "base": "pnwplants:shapes/block/plant/flower/trillium-ovatum/trillium-ovatum.json"
   },
-  "randomDrawOffset": false,
+  "randomDrawOffset": true,
   "randomizeRotations": true,
   "randomizeAxes": "xz",
   "sideopaque": {
     "all": false
   },
   "sidesolid": {
-    "all": true
+    "all": false
   },
   "blockmaterial": "Plant",
   "replaceable": 3000,
